@@ -23,7 +23,7 @@
     margin-bottom: 5%;
 }
 .about{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     text-align: center;
     text-transform: capitalize;
@@ -34,4 +34,35 @@
     text-align: left;
     text-transform: capitalize;
     letter-spacing: 1px;
+}
+.skill-list{
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: black 1px 1px 1px;
+    text-align: center;
+}
+.skill-list:hover{
+    border : 2px darkblue solid;
+    transition: border-width 0.2s linear;
+    border-radius: 50%;
+}
+.work{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+}
+.line{
+    border-bottom: solid 2px black;
+    width: 50%;
+}
+.workabout{
+    text-shadow: black 1px 1px 1px;
+    text-align: left;
+}
+.footer{
+    color:darkblue;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
 }
