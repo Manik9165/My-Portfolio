@@ -9,33 +9,33 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 const Profile = () => {
     return (
         <>
-            <div className="container-fluid">
+            <div className="container-fluid main">
                 <div className="row">
                     <div className="col-12 col-sm-6">
                         <img className="img-fluid image" src={Manik} alt="profilepicture" />
                     </div>
                     <div className="col-12 col-sm-6">
                         <p className="text">I'm <span style={{ textDecoration: "underline" }}>Manik Kapoor</span></p>
-                        <p className="sub-text" style={{ textAlign: "left" }}>A Passionate Web Developer trying to learn and implement new things.😄</p>
+                        <p className="sub-text" style={{ textAlign: "left", color:"#000" }}>A Passionate Web Developer trying to learn and implement new things.😄</p>
                         <div className="row">
                             <div className="col-4 col-sm-2 m-1">
-                                <button className="btn btn-outline-info">About Me</button>
+                                <a href="#about" className="btn btn-outline-dark">About Me</a>
                             </div>
                             <div className="col-3 col-sm-2 m-1">
-                                <button className="btn btn-outline-info">Education</button>
+                                <a href="#education" className="btn btn-outline-dark">My Skills</a>
                             </div>
                             <div className="col-5 col-sm-3 m-1">
-                                <button className="btn btn-outline-info">Work Experience</button>
+                                <a href="#work" className="btn btn-outline-dark">Work Experience</a>
                             </div>
                             <div className="col-3 col-sm-2 m-1">
-                                <button className="btn btn-outline-info">Hobbies</button>
+                                <a href="#hobbies" className="btn btn-outline-dark">Hobbies</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row mt-3">
                     <div className="col-12 col-sm-2">
-                        <p className="about">About Me :- </p>
+                        <p className="about" id="about">About Me :- </p>
                     </div>
                     <div className="col-12 col-sm-10">
                         <ul className="list">
@@ -48,7 +48,7 @@ const Profile = () => {
                 </div>
                 <div className="row mt-5">
                     <div className="col-12 col-sm-2">
-                        <p className="about">My Skills :-</p>
+                        <p className="about" id="education">My Skills :-</p>
                     </div>
                     <div className="col-12 col-sm-1 mt-2">
                         <ul className="skill-list">
@@ -103,7 +103,7 @@ const Profile = () => {
                 </div>
                 <div className="row mt-5">
                     <div className="col-12 col-sm-3">
-                        <p className="about">Work Experience :-</p>
+                        <p className="about" id="work">Work Experience :-</p>
                     </div>
                     <div className="col-12 col-sm-9">
                         <div className="work">
@@ -112,13 +112,13 @@ const Profile = () => {
                                 <li>
                                     <strong>Project 1 :- Weather Application</strong>
                                     <p>Description :- A single page responsive weather application build using React JS.</p>
-                                    <p><a href="https://github.com/Manik9165/Weather_App.git">Source</a></p>
+                                    <p><a href="https://github.com/Manik9165/Weather_App.git" style={{color:"black"}}>Source</a></p>
                                     <hr className="line" />
                                 </li>
                                 <li>
                                     <strong>Project 2 :- React Website</strong>
                                     <p>Description :- A multipage responsive website build using React JS and bootstrap 4.6.</p>
-                                    <p><a href="https://github.com/Manik9165/React_website.git">Source</a></p>
+                                    <p><a href="https://github.com/Manik9165/React_website.git" style={{color:"black"}}>Source</a></p>
                                     <hr className="line" />
                                 </li>
                                 <li>
@@ -137,7 +137,7 @@ const Profile = () => {
                 </div>
                 <div className="row mt-5">
                     <div className="col-12 col-sm-2">
-                        <p className="about">Hobbies :-</p>
+                        <p className="about" id="hobbies">Hobbies :-</p>
                     </div>
                     <div className="col-12 col-sm-10">
                         <ul className="list">
@@ -150,22 +150,22 @@ const Profile = () => {
                 <footer className="footer mt-5">
                     <div className="row mt-">
                         <div className="col-12 col-sm-2">
-                            <p className="about" style={{color:"black"}}>Contact :-</p>
+                            <p className="about">Contact :-</p>
                         </div>
                         <div className="col-3 col-sm-2 mt-2">
-                            <a href="https://github.com/Manik9165"><span><GitHubIcon /></span></a>
+                            <a href="https://github.com/Manik9165"><span><GitHubIcon style={{color:"black"}}/></span></a>
                         </div>
                         <div className="col-3 col-sm-2 mt-2">
-                            <a href="https://kapoormanik123@gmail.com"><span><MailIcon /></span></a>
+                            <a href="https://kapoormanik123@gmail.com"><span><MailIcon style={{color:"black"}}/></span></a>
                         </div>
                         <div className="col-3 col-sm-2 mt-2">
-                            <a href="9165652282"><span><PhoneIcon/></span></a>
+                            <a href="9165652282"><span><PhoneIcon style={{color:"black"}}/></span></a>
                         </div>
                         <div className="col-3 col-sm-2 mt-2">
-                            <a href="https://www.instagram.com/manik_.10/"><span><InstagramIcon/></span></a>
+                            <a href="https://www.instagram.com/manik_.10/"><span><InstagramIcon style={{color:"black"}}/></span></a>
                         </div>
                         <div className="col-3 col-sm-2 mt-2">
-                            <button type="button" className="btn btn-secondary"><span><ExpandLessIcon/></span></button>
+                            <a href="#" className="btn btn-sm btn-outline-dark" style={{borderRadius:"50%"}}><span><ExpandLessIcon/></span></a>
                         </div>
                     </div>
                     Made By Me @ManikKapoor.
