@@ -5,7 +5,11 @@
     font-family: 'Dancing Script', cursive;
 }
 .main{
-    background: linear-gradient(#ddd6f3 30%, #faaca8 70%);
+    /* background: linear-gradient(#ddd6f3 30%, #faaca8 70%); */
+    background-image: url("D:\Thapa_Tutorials\React\portfolio\src\images\SArah.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .image{
     border: black 2px solid;
@@ -73,6 +77,9 @@
     text-align: center;
 }
 @media screen and (max-width : 500px){
+    .main{
+        background: linear-gradient(#D8B5FF 30%, #1EAE98 70%);
+    }
     .image{
         border-radius: 50%;
     }  
